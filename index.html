@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Game</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Reem+Kufi+Fun:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="btn">
+            <span>Start Game</span>
+        </div>
+    
+        <div class="header">
+            <h1>Memory Game</h1>
+        </div>
+        <div class="main-info">
+            <div class="name">
+                Name : <span></span>
+            </div>
+            <div class="timer">
+                <span>6</span>
+            </div>
+            <div class="tries">
+                Wrong Tries : <span>0</span>
+            </div>
+        </div>
+    
+        <div class="c">
+            <div class="holder-box">
+                <div class="box" data-tech="red">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="pic/img (1).jpg" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="red">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="pic/img (1).jpg" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="lofy">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="pic/img (2).jpg" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="lofy">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="pic/img (2).jpg" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="kulla">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="pic/img (3).jpg" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="kulla">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="pic/img (3).jpg" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="boy">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="pic/img (4).jpg" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="boy">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="pic/img (4).jpg" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="kemi">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="pic/img (5).jpg" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="kemi">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="pic/img (5).jpg" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="tom">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="pic/img (6).jpg" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="tom">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="pic/img (6).jpg" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="lofyGlass">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="pic/img (7).jpg" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="lofyGlass">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="pic/img (7).jpg" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="cat">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="pic/img (8).jpg" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="cat">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="pic/img (8).jpg" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="joker">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="pic/img (9).jpg" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="joker">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="pic/img (9).jpg" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="catangre">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="pic/img (10).jpg" alt="">
+                    </div>
+                </div>
+                <div class="box" data-tech="catangre">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="pic/img (10).jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="leaderBoard">
+            <h2>LeaderBoard</h2>
+            <div class="info">
+                <span>Name</span>
+                <span>Wins</span>
+            </div>
+            <ol>
+                
+            </ol>
+        </div>
+    
+        <div class="bgc_for_lose">
+            <div class="restart f">
+                <div class="text">
+                    <p>You Out Of Time</p>
+                    <span class="a">Restart</span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="bgc_for_win">
+            <div class="winbox f">
+                <div class="text">
+                    <p>You Winn</p>
+                    <span class="a">Restart ?</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio class="lose" src="audio/lose.mp3" preload="auto"></audio>
+    <audio class="win" src="audio/win.wav" preload="auto"></audio>
+    <audio class="music" src="audio/Adventure-320bit.mp3" preload="auto"></audio>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
