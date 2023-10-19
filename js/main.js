@@ -109,6 +109,7 @@ function flipBox(selectedBox) {
         winners.map((winer) => {
             if(winer.Name === nameOfPlayer.innerHTML){
                 winer.wins = winer.wins + 1
+                sortWiners()
                 addWinerToLeaderBoard(winners)
                 addDataToLocalStorage(winners)
             }
@@ -117,13 +118,16 @@ function flipBox(selectedBox) {
         const cheackWinners = winners.every((winer) => winer.Name !== nameOfPlayer.innerHTML)
         if(cheackWinners || winners.length===0){
             addWinners(nameOfPlayer.innerHTML)
+            sortWiners()
         }
         // add winer to the leaderboard
         // addWinners(nameOfPlayer.innerHTML)
 
     }
 }
-
+function sortWiners() {
+    winners.sort((a,b) => b.wins - a.wins )
+}
 
 //*? ===============================================
 //*? ======= add winers to the winners array =======
