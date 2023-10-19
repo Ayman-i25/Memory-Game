@@ -105,15 +105,19 @@ function flipBox(selectedBox) {
                 box.style.order = orderRange[index]
             })
         })
+        // maping on winners to increase the wins if the same person win
         winners.map((winer) => {
             if(winer.Name === nameOfPlayer.innerHTML){
                 winer.wins = winer.wins + 1
                 addWinerToLeaderBoard(winners)
                 addDataToLocalStorage(winners)
-            } else {
-                addWinners(nameOfPlayer.innerHTML)
             }
         })
+        // cheack if there is no one have this name in the matrix, to add him to the array 
+        const cheackWinners = winners.every((winer) => winer.Name !== nameOfPlayer.innerHTML)
+        if(cheackWinners || winners.length===0){
+            addWinners(nameOfPlayer.innerHTML)
+        }
         // add winer to the leaderboard
         // addWinners(nameOfPlayer.innerHTML)
 
@@ -134,6 +138,7 @@ function addWinners(winner){
     addWinerToLeaderBoard(winners)
     addDataToLocalStorage(winners)
 }
+
 
 
 //*? ===============================================
